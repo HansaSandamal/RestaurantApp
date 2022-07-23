@@ -6,12 +6,12 @@ const routes: Routes = [
   //{ path: '', component: HomeComponent },
   //{ path: 'login', component: LoginComponent },
   {
-    path:'',
+    path:'home',
     loadChildren: () =>
       import('./home/home.module').then((file) => file.HomeModule),
   },
   {
-    path:'login',
+    path:'',
     loadChildren: () =>
       import('./login/login.module').then((file) => file.LoginModule),
   },

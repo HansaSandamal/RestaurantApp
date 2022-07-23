@@ -4,6 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home.component";
 import {MatToolbarModule} from '@angular/material/toolbar';
 
+
 const routes:Routes=[
     {path:'',component:HomeComponent}
 ]
