@@ -1,0 +1,48 @@
+.background{
+    //background-image: url("/assets/back.jpg");
+    background: linear-gradient(rgba(31, 29, 29, 0.6), rgba(219, 201, 201, 0.5)),
+    url('/assets/back.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.raw{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+ 
+  
+}
+.card{
+    width: 30%;
+    height: 85px;
+    margin: 5px;
+     text-align: center;
+    justify-content: center;
+
+}
+
+@media screen and (min-width: 480px) {
+    .raw{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+      
+    }
+    .card{
+        width: 40%;
+        height: 85px;
+        margin: 5px;
+        text-align: center;
+    
+    }
+  }
+
+
