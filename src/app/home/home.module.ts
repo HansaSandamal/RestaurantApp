@@ -18,6 +18,5 @@ export class HomeRoutingMoudle{}
 @NgModule({
     declarations:[HomeComponent],
     imports:[CommonModule,HomeRoutingMoudle,MatToolbarModule],
-
 })
 export class HomeModule{}
