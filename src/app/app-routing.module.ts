@@ -39,6 +39,11 @@ const routes: Routes = [
     path:'contact',
     loadChildren:()=>
       import('./contact/contact.module').then((file)=>file.ContactModule)
+  },
+  {
+    path:'location',
+    loadChildren:()=>
+      import('./location/location.module').then((file)=>file.LocaionModule)
   }
 ];
 

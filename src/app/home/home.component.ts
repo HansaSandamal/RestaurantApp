@@ -27,12 +27,12 @@ export class HomeComponent implements OnInit {
       url:"/assets/logo.jpg",
     },  
     {
-      title: "Foods",
+      title: "Menu",
       link:"onDelivery()",
       url:"/assets/logo.jpg",
     },  
     {
-      title: "Delivary",
+      title: "Contact Us",
       link:"onDelivery()",
       url:"/assets/logo.jpg",
     },  
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
       url:"/assets/logo.jpg",
     },
     {
-      title: "Delivary",
+      title: "Hours & Location",
       link:"onDelivery()",
       url:"/assets/logo.jpg",
     },
@@ -64,11 +64,18 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['about']);
         break;
       }
-      case 'Foods':{
+      case 'Menu':{
         this.router.navigate(['food']);
         break;
       }
-      
+      case 'Contact Us':{
+        this.router.navigate(['contact']);
+        break;
+      }
+      case 'Hours & Location':{
+        this.router.navigate(['location']);
+        break;
+      }
     }
     
   }

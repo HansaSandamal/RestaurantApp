@@ -25,7 +25,7 @@ export class FoodComponent implements OnInit {
       title: "Delivary",
       subTitle:"sub-title",
       details:"details of food",
-      urlCoverImg:"/assets/back.jpg",
+      urlCoverImg:"/assets/steak.jpg",
       urlHeaderImg:"/assets/logo.jpg"
     },    
     {
@@ -39,7 +39,7 @@ export class FoodComponent implements OnInit {
       title: "Delivary",
       subTitle:"sub-title",
       details:"details of food",
-      urlCoverImg:"/assets/back.jpg",
+      urlCoverImg:"/assets/hamburger.jpg",
       urlHeaderImg:"/assets/logo.jpg"
     },
     {
@@ -53,7 +53,7 @@ export class FoodComponent implements OnInit {
       title: "Delivary",
       subTitle:"sub-title",
       details:"details of food",
-      urlCoverImg:"/assets/back.jpg",
+      urlCoverImg:"/assets/meatSteak.jpg",
       urlHeaderImg:"/assets/logo.jpg"
     },    
 
