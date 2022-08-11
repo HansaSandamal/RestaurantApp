@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, MaxLengthValidator, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -23,6 +23,9 @@ export class LoginComponent implements OnInit {
   onLogin(){
     console.log(this.loginFormGroup.value);
     this.router.navigate(['home'])
+  }
+  onRegister(){
+    this.router.navigate(['register'])
   }
 
 }

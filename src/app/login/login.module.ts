@@ -6,6 +6,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 const routes:Routes=[
     {path:'',component:LoginComponent}
@@ -19,7 +21,7 @@ export class LoginRoutingMoudle{}
 
 @NgModule({
     declarations:[LoginComponent],
-    imports:[CommonModule,LoginRoutingMoudle,MatToolbarModule,MatInputModule,MatButtonModule,ReactiveFormsModule]
+    imports:[CommonModule,LoginRoutingMoudle,MatToolbarModule,MatInputModule,MatButtonModule,ReactiveFormsModule,MatMenuModule,MatIconModule]
 
 })
 export class LoginModule{}

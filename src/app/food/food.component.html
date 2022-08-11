@@ -1,0 +1,24 @@
+<div class="background">
+    <!-- <mat-toolbar color="primary"></mat-toolbar> -->
+    
+    <div class="menu" >
+      <div class="cardItem" *ngFor="let card of cards">
+        <mat-card class="card">
+            <mat-card-header>
+                <div mat-card-avatar style="background-image: url('{{card.urlHeaderImg}}');background-size: cover;"></div>
+                <mat-card-title>{{card.title}}</mat-card-title>
+                <mat-card-subtitle>{{card.subTitle}}</mat-card-subtitle>
+            </mat-card-header>
+          <img mat-card-sm-image src={{card.urlCoverImg}} style="width:100% ;"/>
+          <mat-card-content *ngIf="!isShow">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo commodi exercitationem natus impedit, ipsum, magni maxime dolores, quae vel nulla excepturi laboriosam. Dolorum, inventore nobis! Exercitationem similique consequuntur voluptatum quas!</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="show()">Go</button>
+            
+          </mat-card-actions>
+          
+        </mat-card>
+      </div>
+    </div>
+  </div>

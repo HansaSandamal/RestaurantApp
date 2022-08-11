@@ -1,48 +1,12 @@
 <div class="background">
-  <mat-toolbar color="primary"></mat-toolbar>
+  <!-- <mat-toolbar color="primary"></mat-toolbar> -->
 
   <div class="menu">
-
-  <div class="raw">
-    <mat-card class="card" (click)="onDelivery()">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-  </div>
-  <div class="raw">
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-  </div>
-  <div class="raw">
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-  </div>
-  <div class="raw">
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-    <mat-card class="card">
-      <img mat-card-sm-image src="/assets/logo.jpg" />
-      <mat-card-subtitle>Delivery</mat-card-subtitle>
-    </mat-card>
-  </div>
-
+    <div class="cardItem" *ngFor="let card of cards">
+      <mat-card class="card" (click)=onNavigate(card.title)>
+        <img mat-card-sm-image src={{card.url}}/>
+        <mat-card-subtitle>{{card.title}}</mat-card-subtitle>
+      </mat-card>
+    </div>
   </div>
 </div>

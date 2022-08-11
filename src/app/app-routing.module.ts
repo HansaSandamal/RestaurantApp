@@ -20,6 +20,26 @@ const routes: Routes = [
     loadChildren: () =>
       import('./delivery/delivery.module').then((file) => file.DeliveryModule),
   },
+  {
+    path:'about',
+    loadChildren:()=>
+      import('./about/about.module').then((file)=>file.AboutModule),
+  },
+  {
+    path:'register',
+    loadChildren:()=>
+      import('./register/register.module').then((file)=>file.RegisterModule)
+  },
+  {
+    path:'food',
+    loadChildren:()=>
+      import('./food/food.module').then((file)=>file.FoodModule)
+  },
+  {
+    path:'contact',
+    loadChildren:()=>
+      import('./contact/contact.module').then((file)=>file.ContactModule)
+  }
 ];
 
 @NgModule({

@@ -1,0 +1,40 @@
+<div class="background">
+</div>
+<span class="form">
+  <div class="registerTitle">
+    <p>Regiter New User</p>
+  </div>
+  <span class="form">
+    <form [formGroup]="registerFormGroup">
+      <mat-form-field>
+        <mat-label>User Name</mat-label>
+        <input matInput placeholder="Enter name" formControlName="userName" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter e-mail" formControlName="email" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          placeholder="Enter password"
+          type="password"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <button
+        [disabled]="!registerFormGroup.valid"
+        mat-raised-button
+        color="primary"
+        (click)="onRegister()"
+      >
+        Register
+      </button>
+    </form>
+  
+    <!-- {{registerFormGroup.value|json}} -->
+  </span>
+</span>
+<div class="background">
+</div>

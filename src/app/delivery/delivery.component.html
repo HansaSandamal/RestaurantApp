@@ -1,1 +1,7 @@
 <p>delivery works!</p>
+<ol>
+    <li *ngFor="let item of items; let i = index; let k = odd; ">
+        
+        {{k}} - {{item.itemName}}
+    </li>
+</ol>

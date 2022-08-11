@@ -1,0 +1,26 @@
+.background{
+    //background-image: url("/assets/back.jpg");
+    background: linear-gradient(rgba(31, 29, 29, 0.6), rgba(219, 201, 201, 0.5)),
+    url('/assets/back.jpg');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size:cover;
+    
+
+    
+}
+.card{
+    max-width: 400px;
+    margin: 2px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 3vh;
+ 
+}
+
